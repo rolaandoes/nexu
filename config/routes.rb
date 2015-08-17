@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   
+  get 'matches/show'
+
+  get 'matches/edit'
+
+  get 'swipes/index'
+
   root 'pages#index'
 
   match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
