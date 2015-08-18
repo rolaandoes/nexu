@@ -15,7 +15,6 @@ class SessionsController < ApplicationController
   end
 
   def new
-    # @user = User.find(session[:user_id])
   end
 
   def destroy

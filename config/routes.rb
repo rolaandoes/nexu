@@ -24,9 +24,6 @@ end
 
 
 #       Prefix Verb     URI Pattern                        Controller#Action
-# matches_show GET      /matches/show(.:format)            matches#show
-# matches_edit GET      /matches/edit(.:format)            matches#edit
-# swipes_index GET      /swipes/index(.:format)            swipes#index
 #         root GET      /                                  pages#index
 #              GET|POST /auth/:provider/callback(.:format) sessions#create
 # auth_failure GET|POST /auth/failure(.:format)            redirect(301, /)
@@ -39,6 +36,9 @@ end
 #              PATCH    /users/:id(.:format)               users#update
 #              PUT      /users/:id(.:format)               users#update
 #              DELETE   /users/:id(.:format)               users#destroy
+#      profile GET      /profile(.:format)                 users#show
+#       signup GET      /signup(.:format)                  sessions#new
+#   my_matches GET      /my-matches(.:format)              matches#edit
 
 
 
