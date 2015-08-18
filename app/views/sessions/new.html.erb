@@ -1,0 +1,12 @@
+<h1>FB Button</h1>
+<h2>buttonEvent = users#update</h2>
+<h3>Test for this</h3>
+
+<div id="user-widget">
+  <% if current_user %>
+    Welcome <strong><%= current_user.name %></strong>!
+    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+  <% else %>
+    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+  <% end %>
+</div>

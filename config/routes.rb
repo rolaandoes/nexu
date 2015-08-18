@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   
-  get 'matches/show'
+  # get 'matches/show'
 
-  get 'matches/edit'
+  # get 'matches/edit'
 
-  get 'swipes/index'
+  # get 'swipes/index'
 
   root 'pages#index'
 
@@ -13,10 +13,10 @@ Rails.application.routes.draw do
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 
   resources :users
-  get '/profile', to: 'users#show'
-  get '/signup', to: 'users#new', as: :signup
+  get '/profile', to: 'users#show' 
+  get '/signup', to: 'sessions#new', as: :signup #Actual Splash Page
 
-  
+  # get '/profile', to: 'users#show', as: :profile
   get '/my-matches', to: 'matches#edit'
 
 
@@ -39,3 +39,10 @@ end
 #              PATCH    /users/:id(.:format)               users#update
 #              PUT      /users/:id(.:format)               users#update
 #              DELETE   /users/:id(.:format)               users#destroy
+
+
+
+
+
+
+
