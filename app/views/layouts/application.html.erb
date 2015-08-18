@@ -2,31 +2,16 @@
 <html>
 <head>
   <title>NexuTest</title>
-
-<!-- TEST FOR GEO COORDINATES ##### ARE WE RECEIVING THEM ON THIS PAGE? -->
-
-<!-- MOVE TO JAVASCRIPTS>APPLICATION.JS FILE -->
-
-
+  <link href='http://fonts.googleapis.com/css?family=Raleway|Montserrat' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
 </head>
-<body>
 
-<h1>NeXu</h1>
+<body>
+	<div class="container"> 
 
 <%= javascript_include_tag :application %>
-
-<!-- <p><button onclick="geoFindMe()">Show my location</button></p>
-<div id="out"></div> -->
-
-
-</div>
-
-
 <%= yield %>
-
-
-
-
-
+	</div>
 </body>
 </html>
