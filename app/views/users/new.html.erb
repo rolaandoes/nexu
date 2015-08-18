@@ -1,16 +1,13 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
-
-<h2>SignUp/Login</h2>
-
-<div id="user-widget">
-  <% if current_user %>
-    Welcome <strong><%= current_user.name %></strong>!
-    <%= link_to "Sign out", signout_path, id: "sign_out" %>
-  <% else %>
-    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-  <% end %>
+<div class="row">
+	<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
 </div>
 
-	</br>
-  <a href="/my-matches">My Matches</a>
+<div class="row">
+	<div class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">
+		<%= form_for @user do |f| %>
+			<%= f.text_field :phone_number, placeholder: "Phone Number" %><br>
+			<%= f.text_field :description, placeholder: "Description" %><br>
+			<%= f.submit "Done" %>
+		<% end %>	
+	</div>
+</div>
