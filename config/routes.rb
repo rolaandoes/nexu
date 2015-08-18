@@ -13,10 +13,20 @@ Rails.application.routes.draw do
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 
   resources :users
+  get '/profile', to: 'users#show'
+  get '/signup', to: 'users#new', as: :signup
+
+  
+  get '/my-matches', to: 'matches#edit'
+
+
 end
 
 
 #       Prefix Verb     URI Pattern                        Controller#Action
+# matches_show GET      /matches/show(.:format)            matches#show
+# matches_edit GET      /matches/edit(.:format)            matches#edit
+# swipes_index GET      /swipes/index(.:format)            swipes#index
 #         root GET      /                                  pages#index
 #              GET|POST /auth/:provider/callback(.:format) sessions#create
 # auth_failure GET|POST /auth/failure(.:format)            redirect(301, /)
