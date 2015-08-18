@@ -31,7 +31,10 @@ var gps_Coordinator = function(posA,posB){
 
 
 
+As soon as you login, it checks most recent GPS location from your matches...
+Sends you ping
 
+Use Google Feature for *Distance*
 
 
 
@@ -51,6 +54,11 @@ IF i turn my "GPS Discoverable feature ON"
 		ARE ALLOWED ("Pingable")
 
 			to Connect with me 
+
+
+
+Open Now: What's Around me right now?? (feature)
+	-->> friends, restaurants, frequently visited areas, home, businesses
 
 
 

@@ -2,33 +2,36 @@ console.log('I live to serveeeeee')
 
 console.log('Scripts are in the Correct File');
 
-// need to get 'LATITUDE' and 'LONGITUDE' from above function
+function geoFindMe() {
+  var output = document.getElementById("out");
 
-//GPS Coordination Algorithm Goes Here...
+  if (!navigator.geolocation){
+    output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+    return;
+  }
 
+  function success(position) {
+    var latitude  = position.coords.latitude;
+    var longitude = position.coords.longitude;
 
-//posA = Current User
-var lat_Jon = 37.7699202; //about 30 points from decimal
-var lon_Jon = -122.4524135;//about 110 points from decimal
-pos_Jon = [lat_Jon, lon_Jon];
+    
+    output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
 
+    var img = new Image();
+    img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
 
-//posB = from Matches_Array []
-var lat_Greg = 37.80103650912734;
-var lon_Greg = -122.44235650053272;
-pos_Greg = [lat_Greg, lon_Greg];
+    console.log(longitude);
+    console.log(latitude);
+    //PLUCK into Location TABLE
+    
+    output.appendChild(img);
+  };
 
+  function error() {
+    output.innerHTML = "Unable to retrieve your location";
+  };
 
+  output.innerHTML = "<p>Locating…</p>";
 
-var gps_Coordinator = function(posA,posB){
-	
+  navigator.geolocation.getCurrentPosition(success, error);
 }
-
-
-LatLng(lat:number, lng:number, noWrap?:boolean)
-
-{lat: -34, lng: 151}
-
-
-computeDistanceBetween(from:LatLng, to:LatLng, radius?:number)	
-
