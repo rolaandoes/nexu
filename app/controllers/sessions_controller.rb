@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  
   def create
     user = User.from_omniauth(env["omniauth.auth"])
     session[:user_id] = user.id
@@ -14,8 +15,8 @@ class SessionsController < ApplicationController
     end
   end
 
-  def new
-  end
+  # def new
+  # end
 
   def destroy
     session[:user_id] = nil

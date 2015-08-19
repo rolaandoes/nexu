@@ -1,4 +1,19 @@
-<h1>Users#edit</h1>
+<h1>Users#edit for <%= @user.id %></h1>
 <p>Find me in app/views/users/edit.html.erb</p>
-<h2>Form for Phone# </br>Interests</h2>
-	</br>
+
+
+
+	<p><button data-id="<%= @user.id %>" id="finder-btn">Geo-Coordnate My Position</button>Send Coordinates to DB</p>
+
+
+	<div id="out"></div>
+
+	<h2>Coordinates to DataBase!</br>lat, lon</h2>
+
+	<a href="#" onclick="this.style.backgroundColor='#990000'">Paint it red</a>
+
+
+
+
+
+
