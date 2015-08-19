@@ -1,6 +1,33 @@
-console.log('I live to serveeeeee')
+$(function(){
 
-console.log('Scripts are in the Correct File');
+  $('#finder-btn').on('click', function (){
+
+    var currentUserId = $(this).attr('data-id')
+    
+    $.ajax({
+      url: '/users/' + currentUserId,
+      data: { latitude: LatLng[0], longitude: LatLng[1] },
+      type: 'get',
+      success: function(data) {
+        console.log("Patch Succesful!")
+      },
+      error: function(err) {
+        console.log("Error Thrown")
+      }
+    });
+  });
+});
+
+
+//update location for current_user
+
+        LatLng = [];
+        console.log(LatLng);
+
+       var latitude = LatLng[0]
+       var longitude = LatLng[1]
+
+
 
 function geoFindMe() {
   var output = document.getElementById("out");
@@ -20,9 +47,16 @@ function geoFindMe() {
     var img = new Image();
     img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
 
-    console.log(longitude);
-    console.log(latitude);
+    // console.log(longitude);
+    // console.log(latitude);
     //PLUCK into Location TABLE
+     
+    // latitude = lat_Jon;
+    // longitude = lon_Jon;
+
+    LatLng.push(latitude);
+    LatLng.push(longitude);
+
     
     output.appendChild(img);
   };
@@ -35,3 +69,22 @@ function geoFindMe() {
 
   navigator.geolocation.getCurrentPosition(success, error);
 }
+
+
+
+console.log('I live to serveeeeee')
+
+console.log('Scripts are in the Correct File');
+
+
+
+
+
+
+
+
+
+
+
+
+
