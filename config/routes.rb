@@ -12,12 +12,32 @@ Rails.application.routes.draw do
   match 'auth/failure', to: redirect('/'), via: [:get, :post]
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 
+   # users routes
+  get "/signup", to: "users#new"
+  get "/profile", to: "users#show"
+  get '/users/edit', to: "users#edit"
+  post '/users/edit', to: 'users#update'
+  put '/users/edit', to: 'users#update', as: :user
+
+  resources :users
+
+  # sessions routes
+  get "/login", to: "sessions#new"
+  get "/logout", to: "sessions#destroy"
+  delete "/signout", to: "sessions#destroy"
+
+  # post "/sessions", to: "sessions#create" 
+  resources :sessions, only: [:create]
+
+
+
   resources :users
   get '/profile', to: 'users#show' 
-  get '/signup', to: 'sessions#new', as: :signup #Actual Splash Page
+  # get '/login', to: 'sessions#new', as: :signup #Actual Splash Page
 
   # get '/profile', to: 'users#show', as: :profile
   get '/my-matches', to: 'matches#edit'
+  resources :matches
 
 
 end
