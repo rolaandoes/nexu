@@ -1,0 +1,14 @@
+<hr>
+<p style="text-align: center"> You have been matched with the following NeXu users based on your interest in <%= current_user.interest.topic %> </p>
+<hr>
+<div style="text-align: center"> 
+	<% @users.each do |user| %>
+		<% if user.interest_id == current_user.interest_id %>
+			<%= user.name %>
+		<% else %>
+			<p>  </p>
+		<% end %>
+<% end %>
+</div>
+<hr>
+<p style="text-align: center"> <%= link_to 'See which NeXu users are nearby', :class => 'btn' %> </p>

@@ -10,7 +10,23 @@
 
 	<h2>Coordinates to DataBase!</br>lat, lon</h2>
 
-	<a href="#" onclick="this.style.backgroundColor='#990000'">Paint it red</a>
+	<div class="row">
+		<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
+	</div>
+
+
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">
+			<%= form_for @user do |f| %>
+				<%= f.text_field :name, placeholder: "Name" %><br>
+				<%= f.number_field :phone_number, placeholder: "Phone Number" %><br>
+				<%= f.text_field :description, placeholder: "Description" %><br>
+				<%= f.collection_select :interest_id, Interest.all, :id, :topic %>
+				<%= f.submit "Done" %>
+			<% end %>	
+		</div>
+	</div>
+
 
 
 
