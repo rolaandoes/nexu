@@ -2,3 +2,22 @@
 <p>Find me in app/views/users/edit.html.erb</p>
 <h2>Form for Phone# </br>Interests</h2>
 	</br>
+	</br>
+  <a href="/my-matches">My Matches</a>
+
+
+
+<div class="row">
+	<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
+</div>
+
+<div class="row">
+	<div class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">
+		<%= form_for @user do |f| %>
+			<%= f.text_field :phone_number, placeholder: "Phone Number" %><br>
+			<%= f.text_field :description, placeholder: "Description" %><br>
+			
+			<%= f.submit "Done" %>
+		<% end %>	
+	</div>
+</div>
