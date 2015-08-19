@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   
   # before_filter :authorize, only: [:show]
 
+
   def new
     @user = User.new
   end
@@ -11,7 +12,20 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(session[:user_id])
-    p @user
+    # p @user
+  end
+
+
+
+  def update
+    # byebug
+    # @user.update_attributes(user_params)
+    # user_id = current_user.id
+    # @user = User.find(user_id)
+    @user = User.find(session[:user_id])
+    @user.update_attributes(user_params)
+    # redirect_to profile_path
+    render :edit
   end
 
 
@@ -19,8 +33,23 @@ class UsersController < ApplicationController
 
 
 
+  # - - - - - - - - - - - - - - - - - - 
+
+  def show
+    @user = User.find(session[:user_id])
+    @description = @user.description
+    render :show
+  end
+
+#==========================
+  private
+    def user_params
+      params.require(:user).permit(:latitude, :longitude)
+    end
 
 
+
+end
 
 #====================================
   # def update
@@ -34,14 +63,16 @@ class UsersController < ApplicationController
   #   end
   # end
 
-  def update
-    # @user = User.find(session[:user_id])
-    user_id = current_user.id
-    @user = User.find(user_id)
-    @user.update_attributes(user_params)
+  # def update
+  #   # @user = User.find(session[:user_id])
+  #   # skip_before_action :verify_authenticity_token
+  #   # user_id = current_user.id
+  #   # @user = User.find(user_id)
+  #   # @user.update_attributes(user_params)
 
-    puts @user.latitude
-  end
+  #   # puts @user.latitude
+  #   @user.update_attributes(user_params)
+  # end
 
   # def location
   #   @lat
@@ -62,38 +93,6 @@ class UsersController < ApplicationController
     #Runs Distance Function
       #in which File?
 
-
-
-
-
-#==========================
-
-  # def update
-  # 	lattitude = Post.
-  # end
-
-  # - - - - - - - - - - - - - - - - - - 
-
-  def show
-    @user = User.find(session[:user_id])
-    @description = @user.description
-    render :show
-  end
-
-
-  private
-    def user_params
-      params.require(:user).permit(:latitude, :longitude)
-    end
-
-    # def location
-    #   user.latitude = @latitude
-    #   user.longitude = @longitude
-    # end
-
-
-
-end
 
 
 

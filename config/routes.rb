@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   resources :users
 
-  get '/profile', to: 'users#show' 
+  get '/profile', to: 'users#show' , as: :profile
   get '/signup', to: 'sessions#new', as: :signup #Actual Splash Page
 
   # get '/profile', to: 'users#show', as: :profile
