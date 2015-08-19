@@ -6,9 +6,12 @@
 		    Welcome <strong><%= current_user.name %></strong>!
 		    <%= link_to "Sign out", signout_path, id: "sign_out" %>
 		  <% else %>
-		  <button class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 text-center"><a href="/signup">
-		    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-		  </button>
+			  <button class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 text-center"><a href="/signup">
+			    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+			    <li><%= link_to "Login", 'login' %></a></li> 
+			    <li><%= link_to "Signup", 'signup' %></a></li> 
+			  </button>
+		 
 		  <% end %>
 </div>
 
