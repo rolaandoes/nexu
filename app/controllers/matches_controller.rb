@@ -2,7 +2,7 @@ class MatchesController < ApplicationController
 
 	def index
 		@users = []
-		all_users = User.all
+		all_users = User.all - [current_user]
 		current_user = User.find(session[:user_id])
 		all_users.each do |user|
 			if user.interest_id == current_user.interest_id
@@ -56,7 +56,7 @@ def connection
 	cnx = []
 	threshold = 4800 #meters (3 miles)
 
-	p int_match
+	# p int_match
 
 	int_match.each do |connect| #?
 
@@ -65,13 +65,21 @@ def connection
 		match_coord = [match_lat,match_lng]
 
 	    if distance(cu_coord,match_coord) < threshold
-	        cnx.push(match_coord)
-	        #send SMS
+	      cnx.push(match_coord)
+	      p connect.phone_number
+	      p cnx
+
+	      client = Twilio::REST::Client.new Rails.application.secrets.twilio_account_sid, Rails.application.secrets.twilio_auth_token
+	      message = client.messages.create from: '+14152148009', to: connect.phone_number, body: connect.name + "is nearby."
+	      	
+
+	        # send SMS
 	    else
 	    	print 'too far'
 	    end
 	end
-	p cnx
+	
+
 
 	#cnx.text
 	redirect_to '/profile'
