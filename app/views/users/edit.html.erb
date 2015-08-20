@@ -1,30 +1,19 @@
-<h1>Users#edit for <%= @user.id %></h1>
-<p>Find me in app/views/users/edit.html.erb</p>
 
+	<div class="row">
+		<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
+	</div>
 
+	<h1>Users#edit for <%= @user.id %></h1>
 
 	<p><button data-id="<%= @user.id %>" id="finder-btn">Geo-Coordnate My Position</button>Send Coordinates to DB</p>
 
 
 	<div id="out"></div>
 
-	<h2>Coordinates to DataBase!</br>lat, lon</h2>
-
-	<div class="row">
-		<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
-	</div>
 
 
-<div class="row">
-	<div class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">
-		<%= form_for @user do |f| %>
-			<%= f.number_field :phone_number, placeholder: "Phone Number" %><br>
-			<%= f.text_area :description, placeholder: "Tell us about yourself" %><br>
-			<%= f.collection_select :interest_id, Interest.all, :id, :topic %>
-			<%= f.submit "Done" %>
-		<% end %>	
-	</div>
-</div>
+
+
 
 
 

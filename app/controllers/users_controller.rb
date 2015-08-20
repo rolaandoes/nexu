@@ -4,7 +4,8 @@ class UsersController < ApplicationController
 
 
   def new
-    @user = User.new
+    # @user = User.new
+    @user = User.find(session[:user_id])
   end
 
   def create

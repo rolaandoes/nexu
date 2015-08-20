@@ -1,10 +1,3 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
-
-<h2>Form for Phone# </br>Interests</h2>
-	</br>
-  <a href="/my-matches">My Matches</a>
-
 
 
 <div class="row">
@@ -14,11 +7,17 @@
 
 <div class="row">
 	<div class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">
+
 		<%= form_for @user do |f| %>
 			<%= f.number_field :phone_number, placeholder: "Phone Number" %><br>
 			<%= f.text_area :description, placeholder: "Tell us about yourself" %><br>
 			<%= f.collection_select :interest_id, Interest.all, :id, :topic %>
 			<%= f.submit "Done" %>
 		<% end %>	
+
 	</div>
 </div>
+
+  <a href="/my-matches">My Matches</a>
+
+
