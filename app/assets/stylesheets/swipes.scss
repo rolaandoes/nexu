@@ -1,0 +1,64 @@
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+	.glyphicon {
+		line-height: 6;
+		font-size: 16px;
+		color: #fff;
+	}
+	.cicle-btn {
+		background-color: #000;
+	}
+	body > div.container > div:nth-child(14) > div.circle-btn.glyphicon.glyphicon-ok.col-xs-3.text-center{
+		background-color: rgba(0, 85, 128, 0.57);
+	    border-radius: 50px;
+	    margin-left: 15px;
+	}
+	body > div.container > div:nth-child(14) > div.circle-btn.glyphicon.glyphicon-remove.col-xs-3.text-center{
+	    background-color: rgba(255, 0, 0, 0.57);
+		border-radius: 50px;
+		margin-right: 15px;
+	}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min){ 
+	.glyphicon {
+		line-height: 6;
+		font-size: 16px;
+		color: #fff;
+	}
+	.cicle-btn {
+		background-color: #000;
+	}
+}
+	
+
+ /*Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min){ 
+	.glyphicon {
+		line-height: 6;
+		font-size: 16px;
+		color: #fff;
+	}
+	.cicle-btn {
+		background-color: #000;
+	}
+}
+
+
+ /*Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min){ 
+	.glyphicon {
+		line-height: 6;
+		font-size: 16px;
+		color: #fff;
+	}
+	.cicle-btn {
+		background-color: #000;
+	}
+}
+

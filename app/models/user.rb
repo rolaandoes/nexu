@@ -9,5 +9,8 @@ class User < ActiveRecord::Base
       user.save!
       @provider = user.provider
     end
+
+  # validates :latitude, :longitude, presence: true
+  
   end
 end

@@ -1,28 +1,65 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+HTTPS Routes Up/Running:
 
-Things you may want to cover:
+root 'pages#index'  #SPLASH PAGE
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  URL = '/profile', to: 'users#show' #Profile
+  URL = '/signup', to: 'users#new' #Login/SignUp
+  URL = '/my-matches', to: 'matches#edit' #GPS button
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Monday Night Docket:
+
+Greg: Working with PostgreSQL Database via Heroku
+
+Rolando: Research Twillio, send a text from 'Localhost:3000'?
+
+Michelle: Complete WireFrames, Upload to Invision Protptype
+
+Jon: MAP routes (doing) & logic of sripts.js:
+
+var gps_Coordinator = function(posA,posB){
+	2 Users
+	Extract:
+		UserA: lon/lat (Current_User)
+		UserB: lon/lat #(from "Matches_Array")
+
+		computeDistanceBetween(from:LatLng, to:LatLng, radius?:number)
+}
+
+
+
+
+As soon as you login, it checks most recent GPS location from your matches...
+Sends you ping
+
+Use Google Feature for *Distance*
+
+
+
+
+-----------------------------------
+IDEA:
+
+-Be able to make a specific group of FaceBook Friends "Pingable"
+
+
+SELECT "Pingable_Users_Array" direct from FaceBook Graph Search (API)
+
+IF i turn my "GPS Discoverable feature ON"
+
+	FB Graph Search: My Friends who live in San Francisco
+
+		ARE ALLOWED ("Pingable")
+
+			to Connect with me 
+
+
+
+Open Now: What's Around me right now?? (feature)
+	-->> friends, restaurants, frequently visited areas, home, businesses
+
+
+
+

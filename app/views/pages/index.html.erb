@@ -1,2 +1,14 @@
-<h1>Pages#index</h1>
+<div class="row">
+	<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
+</div>
+<div id="user-widget">
+		  <% if current_user %>
+		    Welcome <strong><%= current_user.name %></strong>!
+		    <%= link_to "Sign out", signout_path, id: "sign_out" %>
+		  <% else %>
+		  <button class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 text-center"><a href="/signup">
+		    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+		  </button>
+		  <% end %>
+</div>
 

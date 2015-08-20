@@ -1,0 +1,2 @@
+module SwipesHelper
+end
