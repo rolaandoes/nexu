@@ -1,35 +1,22 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
-<h2>My Profile Page :)</h2>
-
-
+<div class="row">
+	<a href="/find-me" class="col-xs-2"><span class="glyphicon glyphicon-map-marker"></span></a>
+	<h3 class="col-xs-8 text-center"><%= @user.name %></h3>
+	<a href="/matches" class="col-xs-2"><span class="glyphicon glyphicon-user"></span></a>
+</div>
 
 <!-- <p><button onclick="geoFindMe()">Show my location</button></p>
 <div id="out"></div>
  -->
 
 
-<a href="/find-me">Find Me!</a>
+
+<div class="col-xs-10 col-xs-offset-1 text-center">
+	<%= image_tag "http://graph.facebook.com/#{current_user.uid}/picture?type=large", id: "profile-pic" %>
+</div>
 
 
-
-
-<div>
+<div class="col-xs-10 col-xs-offset-1 text-center">
 	<%= @user.description %>
 </div>
 
-<div>
-	<b>IMAGE:</b> <img src="<%= @user.image %>">
-</div>
-
-<%= link_to image_tag @user.image %>
-
-
-
-<div>
-	<%= current_user.description %>
-</div>
-<div>
-	<%= link_to "Get your Matches!", matches_path %>
-</div>
 	
