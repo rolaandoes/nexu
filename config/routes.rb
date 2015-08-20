@@ -34,6 +34,10 @@ Rails.application.routes.draw do
   get '/my-matches', to: 'matches#edit'
   get '/find-me', to: 'users#edit'
 
+  post 'twilio/voice' => 'twilio#voice'
+  post 'notifications/notify' => 'notifications#notify'
+
+  resources :twilio
 
  
 
