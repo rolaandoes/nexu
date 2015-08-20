@@ -13,20 +13,15 @@ class MatchesController < ApplicationController
 
 def connection
     
-    # current_user = [37.80103650912734,-122.44235650053272]
+    #move this into SERVICE
+    #app/service/logic.rb
     current_user = User.find(session[:user_id])
     cu_lat = current_user.latitude
     cu_lng = current_user.longitude
     cu_coord = [cu_lat,cu_lng]
 
-
-    # bob = [37.7699202,-122.4524135] #should cnx
-    # joe = [46.055556, 14.508333]
-    # sue = [46.3625, 15.114444]
-
-    #cu_int_matches = [bob,sue,joe]
     int_match = []
-    all_users = User.all
+    all_users = User.all - [current_user]
     all_users.each do |user|
     	if user.interest_id == current_user.interest_id
     		int_match.push(user)
@@ -61,7 +56,7 @@ def connection
 		match_coord = [match_lat,match_lng]
 
 	    if distance(cu_coord,match_coord) < threshold
-	        cnx.push(match_coord)
+	        cnx.push(connect)
 	        #send SMS
 	    else
 	    	print 'too far'

@@ -39,13 +39,14 @@ class UsersController < ApplicationController
   def show
     @user = User.find(session[:user_id])
     @description = @user.description
+    @user_image = @user.image
     render :show
   end
 
 #==========================
   private
     def user_params
-      params.require(:user).permit(:latitude, :longitude, :interest_id, :interest)
+      params.require(:user).permit(:latitude, :longitude, :interest_id, :interest, :image)
     end
 
 
