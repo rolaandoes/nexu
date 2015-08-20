@@ -9,6 +9,8 @@ class MatchesController < ApplicationController
 				@users.push(user)
 			end
 		end
+		session[:user_id] = user.id
+		redirect_to '/profile'
 	end
 
 	def connections
