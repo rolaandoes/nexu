@@ -28,3 +28,14 @@
 
 
 #  User.create (id: 1, provider: "facebook", uid: "10204865938068746", name: "Jon Harlan", oauth_token: "CAALdawihdBoBABtQrH8O7MSCZB0JZBmThUiD74194kEuTnx8C...", oauth_expires_at: "2015-10-16 15:01:49", created_at: "2015-08-17 15:06:16", updated_at: "2015-08-18 21:51:33", phone_number: 248, description: "I love Lacrosse", gender: nil, latitude: "37.80103650912734", longitude: "-122.44235650053272")
+
+
+	# User.create(
+	# 	name: FFaker::Name.name,
+ #    phone_number: FFaker::PhoneNumber.phone_number,
+ #    description: FFaker::HipsterIpsum.sentence(5),
+ #    gender: FFaker::Gender.random,
+ #    interest_id: "2",
+ #    latitude: "37.7948167",
+ #    longitude: "-122.39734799999997"
+	# 	)
