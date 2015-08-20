@@ -1,0 +1,15 @@
+<hr>
+<p style="text-align: center"> You have been matched with the following NeXu users based on your interest in </p>
+<hr>
+<div style="text-align: center"> 
+	<% @users
+	.each do |user| %>
+		<%= user.name %>
+	<% end %>
+</div>
+<hr>
+<p style="text-align: center"> <%= link_to 'See which NeXu users are nearby', :class => 'btn' %> </p>
+
+<a>Click To Find Any Matches Near Me</a>
+
+<!-- helper method to get int_matches to display -->
