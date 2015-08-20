@@ -7,11 +7,21 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Interest.create(topic: "Technology")
-Interest.create(topic: "Outdoors")
-Interest.create(topic: "Games")
-Interest.create(topic: "Parties")
-Interest.create(topic: "Politics")
+# Interest.create(topic: "Technology")
+# Interest.create(topic: "Outdoors")
+# Interest.create(topic: "Games")
+# Interest.create(topic: "Parties")
+# Interest.create(topic: "Politics")
+
+# 25.times do
+#     User.create(
+#       name: FFaker::Name.name,
+#       phone_number: FFaker::PhoneNumber.phone_number,
+#       description: FFaker::HipsterIpsum.sentence(5),
+#       gender: FFaker::Gender.random,
+#       interest_id: rand(1..5)
+#     )
+# end
 
 # User.create (id: 6, provider: "facebook", uid: "1702094226687156", name: "Ryde Lacrosse", oauth_token: "CAALdawihdBoBAKABvbwv2kwoyj4j4ZA5hXxdKtDbgzQ5R2czN...", oauth_expires_at: "2015-10-16 14:46:18", created_at: "2015-08-18 01:48:55", updated_at: "2015-08-18 01:48:55", phone_number: nil, description: nil, gender: nil, latitude: "37.7699202", longitude: "-122.4524135")
 
