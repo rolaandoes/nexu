@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   end
 
   def create
+    redirect_to '/profile'
   end
 
   def edit
@@ -44,7 +45,7 @@ class UsersController < ApplicationController
 #==========================
   private
     def user_params
-      params.require(:user).permit(:latitude, :longitude)
+      params.require(:user).permit(:latitude, :longitude, :interest_id, :interest)
     end
 
 

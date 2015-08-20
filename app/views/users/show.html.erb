@@ -4,9 +4,9 @@
 
 
 
-<p><button onclick="geoFindMe()">Show my location</button></p>
+<!-- <p><button onclick="geoFindMe()">Show my location</button></p>
 <div id="out"></div>
-
+ -->
 
 
 <a href="/find-me">Find Me!</a>
@@ -18,3 +18,13 @@
 	<%= @user.description %>
 </div>
 
+
+
+
+<div>
+	<%= current_user.description %>
+</div>
+<div>
+	<%= link_to "Get your Matches!", matches_path %>
+</div>
+	
