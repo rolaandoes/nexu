@@ -1,46 +1,31 @@
-== README
+READ ME:
 
-HTTPS Routes Up/Running:
-
-root 'pages#index'  #SPLASH PAGE
-
-  URL = '/profile', to: 'users#show' #Profile
-  URL = '/signup', to: 'users#new' #Login/SignUp
-  URL = '/my-matches', to: 'matches#edit' #GPS button
+Description: TINDER for Live CONNECTIONS — Adding Text Message Notification in Order to facilitate “”Bump-shoulders” concept.
 
 
-Monday Night Docket:
+Project URL: nexu.herokuapp.com
 
-Greg: Working with PostgreSQL Database via Heroku
+Wireframes... (see invision)
 
-Rolando: Research Twillio, send a text from 'Localhost:3000'?
+User Stories --
+Monday: Jon's flight lands, he downloads Ping.
+Tuesday: Jon receives his first couple of matches.
+Wednesday: Starts conversations with his matches.
+Thursday: He enjoys his conversation with Carina.
+Friday: On his way to a concert of Friday Jon turns on Ping geolocation and receives a notification alerting him that Carina is in the vicinity. (1 mile radius)
 
-Michelle: Complete WireFrames, Upload to Invision Protptype
+Model Relationships...
 
-Jon: MAP routes (doing) & logic of sripts.js:
+External APIs: Facebook, Twillio, HTML5 geo-location/googleMaps
 
-var gps_Coordinator = function(posA,posB){
-	2 Users
-	Extract:
-		UserA: lon/lat (Current_User)
-		UserB: lon/lat #(from "Matches_Array")
+Gems/libraries:
 
-		computeDistanceBetween(from:LatLng, to:LatLng, radius?:number)
-}
+gem 'omniauth'
+gem 'omniauth-facebook', '1.4.0'
+gem 'rails_12factor'
+gem 'ffaker'
 
-
-
-
-As soon as you login, it checks most recent GPS location from your matches...
-Sends you ping
-
-Use Google Feature for *Distance*
-
-
-
-
------------------------------------
-IDEA:
+Wish List:
 
 -Be able to make a specific group of FaceBook Friends "Pingable"
 
@@ -60,6 +45,12 @@ IF i turn my "GPS Discoverable feature ON"
 Open Now: What's Around me right now?? (feature)
 	-->> friends, restaurants, frequently visited areas, home, businesses
 
+Contributors: (need GitHub)
 
+Greg Onza
 
+Michelle Maltbia
 
+Rolando Rodriguez
+
+Jon Harlan
