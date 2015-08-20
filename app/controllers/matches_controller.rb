@@ -26,7 +26,8 @@ def connection
 
     #cu_int_matches = [bob,sue,joe]
     int_match = []
-    all_users = User.all
+    all_users = User.all - [current_user]
+    # all_users = User.all
     all_users.each do |user|
     	if user.interest_id == current_user.interest_id
     		int_match.push(user)
@@ -54,6 +55,9 @@ def connection
 	
 	cnx = []
 	threshold = 4800 #meters (3 miles)
+
+	p int_match
+
 	int_match.each do |connect| #?
 
 		match_lat = connect.latitude
@@ -68,6 +72,7 @@ def connection
 	    end
 	end
 	p cnx
+
 	#cnx.text
 	redirect_to '/profile'
 	
