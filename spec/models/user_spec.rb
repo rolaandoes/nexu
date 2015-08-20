@@ -1,5 +1,5 @@
 #will write a test to make sure user is saved to db 
-require 'rails-helper'
+require 'rails_helper'
 RSpec.describe User, type: :model do
 
 before do
@@ -12,6 +12,6 @@ before do
 	describe "#provider" do
 		it "lets us know who provides login"
 		expect(@provider).to eq("#@provider")
-	end
+		end
 	end
 end
