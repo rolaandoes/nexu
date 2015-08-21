@@ -1,7 +1,19 @@
+<style>
+	body p{
+		color: #fff;
+		font-family: Raleway;
+		font-size: 18px;
+		font-style: italic;
+		margin-top: -20px;
+	}
+</style>
+
 <div id="overlay-container" class="col-xs-12">
 	<div class="row">
 		<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
 	</div>
+
+	<div id="tagline" class="col-xs-12 text-center"><p>Real Connections.</p></div>
 	<div id="user-widget">
 			  <% if current_user %>
 			    Welcome <%= current_user.name %>
