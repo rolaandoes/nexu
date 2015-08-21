@@ -1,7 +1,18 @@
+<style>
+	body {
+		background: #fff;
+	}
+</style>
+
 <div class="row">
 	<a href="/profile" class="col-xs-2"><span class="glyphicon glyphicon-home"></span></a>
 	<h4 class="col-xs-8 text-center"> Update Your Location </h4>
-	<a href="/find-me" class="col-xs-2"><span class="glyphicon glyphicon-map-marker"></span></a>
+
+	<a href="/matches" class="col-xs-2"><span class="glyphicon glyphicon-user"></span></a>
+</div>
+
+<div class="row col-xs-10 col-xs-offset-1 text-center">
+	<button data-id="<%= @user.id %>" id="finder-btn" class="">Locate Me</button>
 </div>
 
 
@@ -11,16 +22,14 @@
 
 	<h1>Users#edit for <%= @user.id %></h1>
  -->
-<div class="row text-center">
-	<button data-id="<%= @user.id %>" id="finder-btn">Geo-Coordnate My Position</button>
-</div>	
 
 <div class="row text-center">
 	<a href="/connections"><button>Find Matches Near Me</button></a>
 </div>	
 
 
-	<div id="out"></div>
+
+<div id="out" class="col-xs-10 col-xs-offset-1 row text-center"></div>
 
 
 

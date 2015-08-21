@@ -5,7 +5,7 @@ $screen-sm-min: 768px;
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 	body { 
-		/*background: url('follow-me2.jpg') no-repeat 25% 25% fixed;*/
+		background: url('follow-me2.jpg') no-repeat 25% 25% fixed;
 		background-size: cover;
 		font-family: Montserrat;
 		color: #fff;
@@ -39,7 +39,8 @@ $screen-sm-min: 768px;
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min){ 
 	body { 
-		background: url('follow-me.jpg') no-repeat 25% 25% fixed;
+		background: url('follow-me2.jpg') no-repeat 25% 25% fixed;
+		background-size: cover;
 		font-family: Montserrat;
 	}
 	h1 {
@@ -51,7 +52,8 @@ $screen-sm-min: 768px;
  /*Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min){ 
 	body { 
-		background: url('follow-me.jpg') no-repeat 25% 25% fixed;
+		background: url('follow-me2.jpg') no-repeat 25% 25% fixed;
+		background-size: cover;
 		font-family: Montserrat;
 	}
 	h1 {
@@ -63,7 +65,8 @@ $screen-sm-min: 768px;
  /*Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min){ 
 	body { 
-		background: url('follow-me.jpg') no-repeat 25% 25% fixed;
+		background: url('follow-me2.jpg') no-repeat 25% 25% fixed;
+		background-size: cover;
 		font-family: Montserrat;
 		color: #fff;
 	}

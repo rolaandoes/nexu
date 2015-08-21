@@ -1,3 +1,9 @@
+<style>
+body {
+	background: #fff;
+}
+</style>
+
 <div class="row">
 	<a href="/find-me" class="col-xs-2"><span class="glyphicon glyphicon-map-marker"></span></a>
 	<h3 class="col-xs-8 text-center"><%= @user.name %></h3>
@@ -18,5 +24,10 @@
 <div class="col-xs-10 col-xs-offset-1 text-center">
 	<%= @user.description %>
 </div>
+
+<div class="row col-xs-12 text-center">
+	<%= link_to "Sign Out", signout_path, id: "sign_out" %>
+</div>
+
 
 	
