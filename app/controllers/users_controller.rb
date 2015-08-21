@@ -1,8 +1,6 @@
 class UsersController < ApplicationController
   
   # before_filter :authorize, only: [:show]
-
-
   def new
     # @user = User.new
     @user = User.find(session[:user_id])
@@ -23,8 +21,7 @@ class UsersController < ApplicationController
     @user.update_attributes(user_params)
     render :edit
   end
-  # - - - - - - - - - - - - - - - - - - 
-
+  
   def show
     @user = User.find(session[:user_id])
     @description = @user.description
@@ -32,7 +29,6 @@ class UsersController < ApplicationController
     render :show
   end
 
-#==========================
   private
     def user_params
       params.require(:user).permit(:latitude, :longitude, :interest_id, :interest, :image, :phone_number, :description)

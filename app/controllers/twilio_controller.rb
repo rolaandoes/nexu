@@ -1,8 +1,7 @@
 require 'twilio-ruby'
 
-# skip_before_action :verify_authenticity_token
- 
 class TwilioController < ApplicationController
+  
   include Webhookable
  
   after_filter :set_header
@@ -14,7 +13,7 @@ class TwilioController < ApplicationController
   	  r.Say 'Hey there. Congrats on integrating Twilio into your Rails 4 app.', :voice => 'alice'
          r.Play 'http://linode.rabasa.com/cantina.mp3'
   	end
- 
-  	render_twiml response
+   	render_twiml response
   end
+
 end

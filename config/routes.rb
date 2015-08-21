@@ -1,11 +1,5 @@
 Rails.application.routes.draw do
   
-  # get 'matches/show'
-
-  # get 'matches/edit'
-
-  # get 'swipes/index'
-
   root 'pages#index'
 
   get '/connections', to: "matches#connection"
@@ -13,18 +7,11 @@ Rails.application.routes.draw do
   match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
   match 'auth/failure', to: redirect('/'), via: [:get, :post]
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
-  
-  # get "/signup", to: "users#new"
-  
+      
   get "/profile", to: "users#show"
-  
   get '/users/edit', to: "users#edit"
-  
   post '/users/edit', to: 'users#update'
-  
   put '/users/edit', to: 'users#update', as: :user
-
-
 
   resources :users
   resources :matches
@@ -38,9 +25,6 @@ Rails.application.routes.draw do
   post 'notifications/notify' => 'notifications#notify'
 
   resources :twilio
-
- 
-
 
 end
 
