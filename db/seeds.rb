@@ -7,11 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-# Interest.create(topic: "Technology")
-# Interest.create(topic: "Outdoors")
-# Interest.create(topic: "Games")
-# Interest.create(topic: "Parties")
-# Interest.create(topic: "Politics")
+Interest.create(topic: "Technology")
+Interest.create(topic: "Outdoors")
+Interest.create(topic: "Games")
+Interest.create(topic: "Parties")
+Interest.create(topic: "Politics")
 
 # 25.times do
 #     User.create(
