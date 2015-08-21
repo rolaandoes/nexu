@@ -10,6 +10,38 @@ $screen-sm-min: 768px;
 		font-family: Montserrat;
 		color: #fff;
 	}
+	
+	#overlay-container{
+	    background-color: rgba(255, 165, 0, 0.75);
+	    background-size: cover;
+	    position: fixed;
+	    width: 100%;
+	    height: 100%;
+	}
+
+	#overlay-container > div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.text-center > a:nth-child(1) > img {
+		padding-right:10px;
+	}
+
+	#overlay-container > div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.text-center > a:nth-child(2) > img {
+		padding-left: 10px;
+	}
+
+	#overlay-container > div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.text-center > a {
+		margin-top: 38px;
+	}
+
+	#overlay-container > div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.text-center{
+	    margin-top: 50px;
+	}
+
+	#overlay-container > div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.text-center > p {
+		font-family: Raleway;
+		color: #fff;
+		margin-top: 10px;
+		font-size: 12px;
+	}
+
 	h1 {
 		font-family: Raleway;
 		color: #fff;

@@ -1,10 +1,17 @@
+<style>
+	background: url('assets/follow-me2.jpg');
+	background-size: cover;
+	position: fixed;
+</style>
+
+<div id="overlay-container">
 <div class="row">
 	<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
 </div>
 
 
 <div class="row">
-	<div class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">
+	<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">
 
 		<%= form_for @user do |f| %>
 			<%= f.number_field :phone_number, placeholder: "Phone Number" %><br>
@@ -15,7 +22,8 @@
 
 	</div>
 </div>
+</div>
 
-  <a href="/my-matches">My Matches</a>
+
 
 

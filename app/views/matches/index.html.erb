@@ -1,26 +1,37 @@
 <style>
 	body{
-		background: #fff;
+		background: url(assets/sf.jpg);
+		font-family: Raleway;
+		color: #fff;
+	}
+
+	div#nav {
+		margin-top: -25px;
+		margin-bottom: 65px;
+	}
+	.glyphicon {
+		margin-top: -35px;
 	}
 </style>
 
-<div class="row">
-	<a href="/profile" class="col-xs-2"><span class="glyphicon glyphicon-home"></span></a>
-	<h4 class="col-xs-8 text-center"> <%= current_user.name %>'s Matches </h4>
-	<a href="/find-me" class="col-xs-2"><span class="glyphicon glyphicon-map-marker"></span></a>
+<div id="bg-overlay">
+	<div id="nav" class="row">
+		<a href="/profile" class="col-xs-2"><span class="glyphicon glyphicon-home"></span></a>
+		<h4 class="col-xs-8 text-center"> <%= current_user.name %>'s Matches </h4>
+		<a href="/find-me" class="col-xs-2"><span class="glyphicon glyphicon-map-marker"></span></a>
+	</div>
+
+	<!-- <div class="row">
+		<p class="col-xs-8 text-center"> Based on <%= current_user.interest_id %></p>
+	</div> -->
+
+	<% @users .each do |user| %>
+	<div id="nav">
+		<span class="col-xs-3 text-right"><img id="profile-pic" src="<%= user.image %>"></span>
+		<span class="col-xs-9"><p id="user-name"><%= user.name %><p></span>
+	</div>
+	<% end %>
 </div>
-
-<!-- <div class="row">
-	<p class="col-xs-8 text-center"> Based on <%= current_user.interest_id %></p>
-</div> -->
-
-<% @users .each do |user| %>
-<div class="row">
-	<span class="col-xs-3 text-right"><img id="profile-pic" src="<%= user.image %>"></span><br>
-	<p id="user-name" class="col-xs-9"><%= user.name %><p>
-</div>
-<% end %>
-
 <!-- <p style="text-align: center"> <%= link_to 'See which NeXu users are nearby', :class => 'btn' %> </p>
 
 <a>Click To Find Any Matches Near Me</a> -->

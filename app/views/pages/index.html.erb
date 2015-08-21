@@ -1,15 +1,26 @@
-<div class="row">
-	<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
-</div>
-<div id="user-widget">
-		  <% if current_user %>
-		    Welcome <%= current_user.name %>
-		    <%= link_to "Sign Out", signout_path, id: "sign_out" %>
-		  <% else %>
-		  <button class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center"><a href="/signup">
-		    <img src="assets/facebook-icon.svg" alt="">
-		    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
-		  </button>
-		  <% end %>
-</div>
+<div id="overlay-container" class="col-xs-12">
+	<div class="row">
+		<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
+	</div>
+	<div id="user-widget">
+			  <% if current_user %>
+			    Welcome <%= current_user.name %>
+			    <%= link_to "Sign Out", signout_path, id: "sign_out" %>
+			  <% else %>
+			  <button class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center"><a href="/signup">
+			    <img src="assets/facebook-icon.svg" alt="">
+			    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+			  </button>
+			  <% end %>
+	</div>
 
+	<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">
+		<a href="#">
+			<img src="assets/facebook.svg" alt="">
+		</a>
+		<a href="#">
+			<img src="assets/twitter.svg" alt="">
+		</a>
+		<p>All Rights Reserved - Nexu 2015</p>
+	</div>
+</div>

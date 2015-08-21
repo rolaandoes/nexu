@@ -16,7 +16,10 @@ body > div.container > div:nth-child(4) {
 #finder-btn {
 	border: 0;
 	background-color: #F7931E;
+}
 
+div#out{
+	margin-top: 95px;
 }
 
 input {
@@ -28,30 +31,62 @@ input {
 	font-family: Raleway;
 	line-height: 3;
 	padding-left: 8px;
+}
 
+#edit_user_2 > input[type="submit"]{
+	color: #fff;
+	background-color: #F03904;
+}
+
+textarea#user_description {
+	color: #777;
+    font-family: Raleway;
+}
+
+#user_description {
+	width: 100%;
 }
 
 .glyphicon {
 	line-height: 4;
 }
 
+body > div.container > div:nth-child(2) > a:nth-child(1) {
+	padding-left: 30px;
+}
+
 .glyphicon-user {
-	color: #777;
+	color: #fff;
 	font-size: 25px;
 }
 
 .glyphicon-map-marker{
-	color: #777;
+	color: #fff;
+	font-size: 25px;
+}
+
+.glyphicon-home{
+	color: #fff;
 	font-size: 25px;
 }
 
 h3{
-	color: #777;
+	color: #fff;
 	line-height: 2.5;
+	font-family: Raleway;
 }
 
 #profile-pic {
 	border-radius: 150px;
+	margin-top: -45px;
+}
+
+div#nav{
+	margin-top: -45px;
+}
+
+div#sign-out {
+	margin-top: -40px;
 }
 
 select#user_interest_id {
@@ -70,10 +105,35 @@ select#user_interest_id {
 }
 
 body > div.container > div:nth-child(2) > div {
-    background-color: rgba(255, 255, 255, 0.33);
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 25px;
+}
+
+#bg-overlay {
+    background: rgba(37, 36, 36, 0.92);
+	height:100%;
+	width: 100%;
+	z-index: 0;
+	position: fixed;
+}
+
+#bg-overlay > div:nth-child(1) > a:nth-child(1) > span {
+	color: #fff;
+	margin-left: 25px;
+}
+
+#bg-overlay > div:nth-child(1){
+	margin-top: 0px;
+}
+
+#description {
+	color: #fff;
+	margin-top: -40px;
+}
+
+#sign_out {
+	margin-top: -25px;
 }
 
 
