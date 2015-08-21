@@ -5,13 +5,19 @@
 </div>
 
 
-	<div class="row">
+	<!-- <div class="row">
 		<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
 	</div>
 
 	<h1>Users#edit for <%= @user.id %></h1>
+ -->
+<div class="row text-center">
+	<button data-id="<%= @user.id %>" id="finder-btn">Geo-Coordnate My Position</button>
+</div>	
 
-	<p><button data-id="<%= @user.id %>" id="finder-btn">Geo-Coordnate My Position</button>Send Coordinates to DB</p>
+<div class="row text-center">
+	<a href="/connections"><button>Find Matches Near Me</button></a>
+</div>	
 
 
 	<div id="out"></div>
