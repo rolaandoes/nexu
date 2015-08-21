@@ -66,8 +66,8 @@ def connection
 	      p cnx
 
 	      client = Twilio::REST::Client.new Rails.application.secrets.twilio_account_sid, Rails.application.secrets.twilio_auth_token
+
 	      message = client.messages.create from: '+14152148009', to: current_user.phone_number, body: connect.name + " is nearby!" 
-	      	
 
 	        # send SMS
 	    else

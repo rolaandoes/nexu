@@ -3,8 +3,8 @@
 </div>
 <div id="user-widget">
 		  <% if current_user %>
-		    Welcome <strong><%= current_user.name %></strong>!
-		    <%= link_to "/", signout_path, id: "sign_out" %>
+		    Welcome <%= current_user.name %>
+		    <%= link_to "Sign Out", signout_path, id: "sign_out" %>
 		  <% else %>
 		  <button class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center"><a href="/signup">
 		    <img src="assets/facebook-icon.svg" alt="">

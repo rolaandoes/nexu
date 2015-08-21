@@ -4,6 +4,21 @@ $screen-sm-min: 768px;
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+body > div.container > div:nth-child(4) {
+	margin-top: 25px;
+	color: #777;
+}
+
+#out > img {
+	border-radius: 150px;
+}
+
+#finder-btn {
+	border: 0;
+	background-color: #F7931E;
+
+}
+
 input {
 	border-radius: 4px;
 	border: 0px;
