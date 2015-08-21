@@ -1,20 +1,39 @@
 <style>
 	body {
-		background: #fff;
+		background: url(assets/sf.jpg) no-repeat 25% 25% fixed;
+		font-family: Raleway;
+	}
+	.glyphicon {
+		margin-top: -35px;
+		color: #fff;
+	}
+
+	#matches-near-btn{
+		z-index: 5;
+	}
+
+	#bg-overlay > div:nth-child(2) > div{
+		margin-top: -40px;
+	}
+
+	#out > img{
+		margin-top: -90px;
 	}
 </style>
 
-<div class="row">
-	<a href="/profile" class="col-xs-2"><span class="glyphicon glyphicon-home"></span></a>
-	<h4 class="col-xs-8 text-center"> Update Your Location </h4>
+<div id="bg-overlay" class="animated slideInLeft">
+	<div class="row">
+		<a href="/profile" class="col-xs-2"><span class="glyphicon glyphicon-home"></span></a>
+		<h4 class="col-xs-8 text-center"> Update Your Location </h4>
+		<a href="/matches" class="col-xs-2"><span class="glyphicon glyphicon-user"></span></a>
+	</div>
 
-	<a href="/matches" class="col-xs-2"><span class="glyphicon glyphicon-user"></span></a>
-</div>
-
-<div class="row col-xs-10 col-xs-offset-1 text-center">
-	<button data-id="<%= @user.id %>" id="finder-btn" class="">Locate Me</button>
-</div>
-
+	<div class="text-center">
+		<div class="col-xs-12 text-center">
+			<button data-id="<%= @user.id %>" id="finder-btn" class="col-xs-6 ">Locate Me</button>
+			<a href="/connections"><button id="matches-near-btn" class="col-xs-6">Nearby Matches</button></a>
+		</div>	
+	</div>
 
 	<!-- <div class="row">
 		<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
@@ -23,13 +42,10 @@
 	<h1>Users#edit for <%= @user.id %></h1>
  -->
 
-<div class="row text-center">
-	<a href="/connections"><button>Find Matches Near Me</button></a>
+
+	<div id="out" class="col-xs-10 col-xs-offset-1 row text-center"></div>
 </div>	
 
-
-
-<div id="out" class="col-xs-10 col-xs-offset-1 row text-center"></div>
 
 
 
