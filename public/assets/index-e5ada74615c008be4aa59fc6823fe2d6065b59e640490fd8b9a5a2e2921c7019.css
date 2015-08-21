@@ -1,0 +1,58 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* line 7, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+body {
+  /*background: url('sf.jpg') no-repeat 25% 25% fixed;*/
+  font-family: Montserrat;
+  color: #fff;
+}
+
+/* line 12, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+h1 {
+  font-family: Raleway;
+  color: #fff;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* line 19, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  body {
+    /*background: url('sf.jpg') no-repeat 25% 25% fixed;*/
+    font-family: Montserrat;
+  }
+
+  /* line 23, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  h1 {
+    font-family: Raleway;
+    color: #fff;
+  }
+}
+/*Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* line 31, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  body {
+    /*background: url('sf.jpg') no-repeat 25% 25% fixed;*/
+    font-family: Montserrat;
+  }
+
+  /* line 35, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  h1 {
+    font-family: Raleway;
+    color: #fff;
+  }
+}
+/*Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* line 43, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  body {
+    /*background: url('sf.jpg') no-repeat 25% 25% fixed;*/
+    font-family: Montserrat;
+    color: #fff;
+  }
+
+  /* line 48, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  h1 {
+    font-family: Raleway;
+    color: #fff;
+  }
+}
