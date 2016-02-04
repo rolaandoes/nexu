@@ -23,7 +23,7 @@ $(function(){
     var longitude = position.coords.longitude;
 
     //Updating DOM
-    output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
+    // output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
     var img = new Image();
     img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
     output.appendChild(img);
@@ -79,9 +79,6 @@ function geoFindMe() {
 
 
 
-console.log('I live to serveeeeee')
-
-console.log('Scripts are in the Correct File');
 
 
 

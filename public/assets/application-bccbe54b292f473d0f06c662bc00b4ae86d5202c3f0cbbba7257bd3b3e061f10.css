@@ -1,0 +1,357 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* line 7, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+body {
+  /*background: url('sf.jpg') no-repeat 25% 25% fixed;*/
+  font-family: Montserrat;
+  color: #fff;
+}
+
+/* line 12, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+h1 {
+  font-family: Raleway;
+  color: #fff;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* line 19, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  body {
+    /*background: url('sf.jpg') no-repeat 25% 25% fixed;*/
+    font-family: Montserrat;
+  }
+
+  /* line 23, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  h1 {
+    font-family: Raleway;
+    color: #fff;
+  }
+}
+/*Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* line 31, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  body {
+    /*background: url('sf.jpg') no-repeat 25% 25% fixed;*/
+    font-family: Montserrat;
+  }
+
+  /* line 35, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  h1 {
+    font-family: Raleway;
+    color: #fff;
+  }
+}
+/*Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* line 43, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  body {
+    /*background: url('sf.jpg') no-repeat 25% 25% fixed;*/
+    font-family: Montserrat;
+    color: #fff;
+  }
+
+  /* line 48, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/index.scss */
+  h1 {
+    font-family: Raleway;
+    color: #fff;
+  }
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* line 7, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/matches.scss */
+.row {
+  margin-top: 15px;
+}
+
+/* line 11, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/matches.scss */
+body p {
+  color: #777;
+}
+
+/*	#user-name {
+		margin-top: ;
+	}*/
+/* line 19, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/matches.scss */
+body > div.container > div.row > h4 {
+  color: #777;
+  margin-top: 39px;
+}
+
+/* line 23, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/matches.scss */
+.glyphicon {
+  line-height: 4;
+}
+
+/* line 27, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/matches.scss */
+span.glyphicon.glyphicon-home {
+  color: #777;
+  font-size: 25px;
+}
+
+/* line 32, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/matches.scss */
+#profile-pic {
+  border-radius: 50px;
+}
+
+/* Small devices (tablets, 768px and up) */
+/*Medium devices (desktops, 992px and up) */
+/*Large devices (large desktops, 1200px and up) */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* line 7, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/pages.scss */
+body {
+  /*background: url('follow-me2.jpg') no-repeat 25% 25% fixed;*/
+  background-size: cover;
+  font-family: Montserrat;
+  color: #fff;
+}
+
+/* line 13, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/pages.scss */
+h1 {
+  font-family: Raleway;
+  color: #fff;
+  margin-top: 25px;
+}
+
+/* line 19, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/pages.scss */
+#user-widget > button {
+  background-color: #4965b5;
+  border: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  margin-top: 50px;
+}
+
+/* line 28, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/pages.scss */
+#sign_in {
+  color: #fff;
+  font-family: Raleway;
+}
+
+/* line 33, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/pages.scss */
+#user-widget > button > a:nth-child(1) > img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* line 41, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/pages.scss */
+  body {
+    background: url("follow-me.jpg") no-repeat 25% 25% fixed;
+    font-family: Montserrat;
+  }
+
+  /* line 45, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/pages.scss */
+  h1 {
+    font-family: Raleway;
+    color: #fff;
+  }
+}
+/*Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* line 53, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/pages.scss */
+  body {
+    background: url("follow-me.jpg") no-repeat 25% 25% fixed;
+    font-family: Montserrat;
+  }
+
+  /* line 57, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/pages.scss */
+  h1 {
+    font-family: Raleway;
+    color: #fff;
+  }
+}
+/*Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* line 65, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/pages.scss */
+  body {
+    background: url("follow-me.jpg") no-repeat 25% 25% fixed;
+    font-family: Montserrat;
+    color: #fff;
+  }
+
+  /* line 70, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/pages.scss */
+  h1 {
+    font-family: Raleway;
+    color: #fff;
+  }
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* line 7, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/swipes.scss */
+.glyphicon {
+  line-height: 6;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* line 12, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/swipes.scss */
+.cicle-btn {
+  background-color: #000;
+}
+
+/* line 15, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/swipes.scss */
+body > div.container > div:nth-child(14) > div.circle-btn.glyphicon.glyphicon-ok.col-xs-3.text-center {
+  background-color: rgba(0, 85, 128, 0.57);
+  border-radius: 50px;
+  margin-left: 15px;
+}
+
+/* line 20, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/swipes.scss */
+body > div.container > div:nth-child(14) > div.circle-btn.glyphicon.glyphicon-remove.col-xs-3.text-center {
+  background-color: rgba(255, 0, 0, 0.57);
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* line 29, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/swipes.scss */
+  .glyphicon {
+    line-height: 6;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  /* line 34, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/swipes.scss */
+  .cicle-btn {
+    background-color: #000;
+  }
+}
+/*Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* line 42, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/swipes.scss */
+  .glyphicon {
+    line-height: 6;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  /* line 47, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/swipes.scss */
+  .cicle-btn {
+    background-color: #000;
+  }
+}
+/*Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* line 55, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/swipes.scss */
+  .glyphicon {
+    line-height: 6;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  /* line 60, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/swipes.scss */
+  .cicle-btn {
+    background-color: #000;
+  }
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* line 7, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/users.scss */
+input {
+  border-radius: 4px;
+  border: 0px;
+  color: #777;
+  width: 100%;
+  margin-bottom: 4px;
+  font-family: Raleway;
+  line-height: 3;
+  padding-left: 8px;
+}
+
+/* line 19, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/users.scss */
+.glyphicon {
+  line-height: 4;
+}
+
+/* line 23, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/users.scss */
+.glyphicon-user {
+  color: #777;
+  font-size: 25px;
+}
+
+/* line 28, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/users.scss */
+.glyphicon-map-marker {
+  color: #777;
+  font-size: 25px;
+}
+
+/* line 33, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/users.scss */
+h3 {
+  color: #777;
+  line-height: 2.5;
+}
+
+/* line 38, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/users.scss */
+#profile-pic {
+  border-radius: 150px;
+}
+
+/* line 42, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/users.scss */
+select#user_interest_id {
+  width: 100%;
+  margin-bottom: 4px;
+  border: 0;
+  color: #777;
+  font-family: Raleway;
+  height: 46px;
+}
+
+/* line 51, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/users.scss */
+#new_user > input[type="submit"]:nth-child(10) {
+  color: #fff;
+  margin-top: 2px;
+  background-color: #FF4322;
+}
+
+/* line 57, /Users/jonharlan/dev/projects/nexu/app/assets/stylesheets/users.scss */
+body > div.container > div:nth-child(2) > div {
+  background-color: rgba(255, 255, 255, 0.33);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 25px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  border-radius: 4px;
+  border: 0px;
+  color: #000;
+  width: 100%;
+  margin-bottom: 4px;
+}
+/*Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  border-radius: 4px;
+  border: 0px;
+  color: #000;
+  width: 100%;
+  margin-bottom: 4px;
+}
+/*Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  border-radius: 4px;
+  border: 0px;
+  color: #000;
+  width: 100%;
+  margin-bottom: 4px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

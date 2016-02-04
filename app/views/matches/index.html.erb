@@ -1,15 +1,39 @@
-<hr>
-<p style="text-align: center"> You have been matched with the following NeXu users based on your interest in </p>
-<hr>
-<div style="text-align: center"> 
-	<% @users
-	.each do |user| %>
-		<%= user.name %>
+<style>
+	body{
+		background: url(assets/sf.jpg);
+		font-family: Raleway;
+		color: #fff;
+	}
+
+	div#nav {
+		margin-top: -25px;
+		margin-bottom: 65px;
+	}
+	.glyphicon {
+		margin-top: -35px;
+	}
+</style>
+
+<div id="bg-overlay" class="animated slideInLeft">
+	<div id="nav" class="row">
+		<a href="/profile" class="col-xs-2"><span class="glyphicon glyphicon-home"></span></a>
+		<h4 class="col-xs-8 text-center"> <%= current_user.name %>'s Matches </h4>
+		<a href="/find-me" class="col-xs-2"><span class="glyphicon glyphicon-map-marker"></span></a>
+	</div>
+
+	<!-- <div class="row">
+		<p class="col-xs-8 text-center"> Based on <%= current_user.interest_id %></p>
+	</div> -->
+
+	<% @users .each do |user| %>
+	<div id="nav">
+		<span class="col-xs-3 text-right"><img id="profile-pic" src="<%= user.image %>"></span>
+		<span class="col-xs-9"><p id="user-name"><%= user.name %><p></span>
+	</div>
 	<% end %>
 </div>
-<hr>
-<p style="text-align: center"> <%= link_to 'See which NeXu users are nearby', :class => 'btn' %> </p>
+<!-- <p style="text-align: center"> <%= link_to 'See which NeXu users are nearby', :class => 'btn' %> </p>
 
-<a>Click To Find Any Matches Near Me</a>
+<a>Click To Find Any Matches Near Me</a> -->
 
 <!-- helper method to get int_matches to display -->

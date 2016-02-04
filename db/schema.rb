@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20150820195552) do
     t.string   "phone_number"
     t.text     "description"
     t.string   "gender"
+    t.float    "longtitude"
     t.float    "latitude"
     t.float    "longitude"
     t.integer  "interest_id"
