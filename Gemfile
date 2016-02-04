@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 group :production do
   gem 'rails_12factor'
 end
-
+gem '2.2.4', 
+#got an email from heroku to update gem file to what is written above
 gem 'twilio-ruby', '~> 4.2.1'
 
 gem 'ffaker'
