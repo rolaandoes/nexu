@@ -1,25 +1,29 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<style>
+	background: url('assets/follow-me2.jpg');
+	background-size: cover;
+	position: fixed;
+</style>
 
-<h2>Form for Phone# </br>Interests</h2>
-	</br>
-  <a href="/my-matches">My Matches</a>
-
-
-
+<div id="overlay-container" class="animated slideInLeft">
 <div class="row">
 	<h1 class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">NeXu</h1>
 </div>
 
 
 <div class="row">
-	<div class="col-xs-4 col-xs-offset-4 col-sm-6 col-sm-offset-3 text-center">
+	<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">
+
 		<%= form_for @user do |f| %>
-			<%= f.text_field :name, placeholder: "Name" %><br>
 			<%= f.number_field :phone_number, placeholder: "Phone Number" %><br>
-			<%= f.text_field :description, placeholder: "Description" %><br>
+			<%= f.text_area :description, placeholder: "Tell us about yourself" %><br>
 			<%= f.collection_select :interest_id, Interest.all, :id, :topic %>
 			<%= f.submit "Done" %>
 		<% end %>	
+
 	</div>
 </div>
+</div>
+
+
+
+

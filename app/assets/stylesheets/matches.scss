@@ -1,3 +1,51 @@
-// Place all the styles related to the matches controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+	div#nav {
+		margin-top: 25px;
+		padding-bottom: 15px
+	}
+
+	body p{
+		color: #777;
+	}
+
+	#user-name {
+		margin-top: -20px;
+		color: #fff;
+	}
+
+	body > div.container > div.row > h4{
+		color: #fff;
+		margin-top: 39px;
+	}
+	.glyphicon {
+		line-height: 4;
+	}
+
+	span.glyphicon.glyphicon-home {
+		color: #fff;
+		font-size: 25px;
+	}
+
+	#profile-pic {
+		border-radius: 50px;
+	}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min){ 
+	
+}
+
+ /*Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min){ 
+	
+}
+
+ /*Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min){ 
+	
+}

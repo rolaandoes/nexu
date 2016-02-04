@@ -1,3 +1,109 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+	body { 
+		background: url('follow-me2.jpg') no-repeat 25% 25% fixed;
+		background-size: cover;
+		font-family: Raleway;
+		color: #fff;
+	}
+	
+	#overlay-container{
+	    background-color: rgba(255, 165, 0, 0.75);
+	    background-size: cover;
+	    position: fixed;
+	    width: 100%;
+	    height: 100%;
+	}
+
+	#overlay-container > div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.text-center > a:nth-child(1) > img {
+		padding-right:10px;
+	}
+
+	#overlay-container > div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.text-center > a:nth-child(2) > img {
+		padding-left: 10px;
+	}
+
+	#overlay-container > div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.text-center > a {
+		margin-top: 38px;
+	}
+
+	#overlay-container > div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.text-center{
+	    margin-top: 50px;
+	}
+
+	#overlay-container > div.col-xs-10.col-xs-offset-1.col-sm-6.col-sm-offset-3.text-center > p {
+		font-family: Raleway;
+		color: #fff;
+		margin-top: 10px;
+		font-size: 12px;
+	}
+
+	h1 {
+		font-family: Raleway;
+		color: #fff;
+		margin-top: 25px;
+	}
+
+	#user-widget > button {
+		background-color: #4965b5;
+		border: 0;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-radius: 4px;
+		margin-top: 50px;
+	}
+
+	#sign_in {
+		color: #fff;
+		font-family: Raleway;
+	}
+
+	#user-widget > button > a:nth-child(1) > img {
+		height: 20px;
+	    margin-right: 5px;
+	}
+
+	
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min){ 
+	body { 
+		background: url('follow-me2.jpg') no-repeat 25% 25% fixed;
+		background-size: cover;
+		font-family: Montserrat;
+	}
+	h1 {
+		font-family: Raleway;
+		color: #fff;
+	}
+}
+
+ /*Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min){ 
+	body { 
+		background: url('follow-me2.jpg') no-repeat 25% 25% fixed;
+		background-size: cover;
+		font-family: Montserrat;
+	}
+	h1 {
+		font-family: Raleway;
+		color: #fff;
+	}
+}
+
+ /*Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min){ 
+	body { 
+		background: url('follow-me2.jpg') no-repeat 25% 25% fixed;
+		background-size: cover;
+		font-family: Montserrat;
+		color: #fff;
+	}
+	h1 {
+		font-family: Raleway;
+		color: #fff;
+	}
+}
